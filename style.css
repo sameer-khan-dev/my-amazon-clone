@@ -1,0 +1,685 @@
+*{
+    margin: 0px;
+    padding: 0px;
+     box-sizing: border-box; /* border: border-box; this was wrong*/
+    color:white;
+
+}
+.Nav-container{
+    height: 50px;
+    background-color: black;
+    color:white;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    
+    
+}
+.nav-logo{
+    height: 40px;
+    width: 100px;
+    display: flex;
+    align-items: center;
+
+}
+.logo{
+    background-image: url("amazon_logo.png");
+    background-size: cover;
+    height: 40px;
+    width: 100px;
+}
+.border{
+    border:2px solid transparent;
+    height: 38px;
+}
+.border:hover{
+    border:2px solid rgb(163, 160, 160)
+}
+.add-icon{
+    display: flex;
+    align-items: center;
+}
+.add-first{
+    color: rgba(245, 245, 245, 0.884);
+    font-size: 0.85rem;
+    margin-left:20px;
+}
+.add-second{
+    font-size: 1rem;
+}
+ 
+  
+ select{
+    height: 32px;
+    width:44px;
+    text-align: center;
+    color: black; /* added after */
+ }
+ input{
+    height: 32px;
+    width:300px;
+    color: black; /* added after */
+ }
+ .search-but{
+    width: 32px;
+    height: 32px;
+    background-color: #ffae00;
+     
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+ }
+ .search-but:hover{
+    background-color: rgb(240, 168, 13);
+
+ }
+ .nav-search{
+    display: flex;
+ }
+ .sign{
+    font-size: 0.85rem;
+ }
+ .acc{
+    font-size: 1.1rem;
+    font-weight: bold;
+ }
+ .nav-cart{
+    display: flex;
+    font-size: 1.4rem;
+    align-items: center;
+    
+ }
+ .nav-2{
+    height: 30px;
+    background-color: #232f3e;
+    display: flex;
+    color:#ffffff;
+    align-items: center;
+    /* justify-content: space-evenly; */
+    
+     
+ }
+ .nav-menu{
+    display: flex;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-weight: 600;
+    
+    
+ }
+ /*
+ .top-deal{
+  margin-left: 10px;
+    margin-right: 10px;
+     font-weight:  650;
+ }
+ .prime-ved{
+   margin-left: 10px;
+    margin-right: 10px;
+     font-weight:  650;
+ }
+.registry{
+      margin-left: 10px;
+    margin-right: 10px;
+     font-weight:  650;
+}
+.gifts{
+       margin-left: 10px;
+    margin-right: 10px;
+     font-weight:  650;
+}
+.service{
+      margin-left: 10px;
+    margin-right: 10px;
+     font-weight:  650;
+}
+.sell{
+      margin-left: 10px;
+    margin-right: 10px;
+     font-weight:  650;
+    
+}
+*/
+.nav-2-item{               /* .top-deal to .sell */
+   margin: 0 10px;
+   font-weight: 600;
+}
+.border2{
+    border:1px solid  transparent;
+    height: 28px;
+    display: flex;
+    align-items: center;
+}
+.border2:hover{
+    border:1px solid rgb(177, 177, 177);
+}
+.hero-sec{
+    height: 400px;
+    background-image: url("hero_image.jpg");
+    background-size: cover;
+    display: flex;
+    justify-content: center ;
+    align-items: flex-end;
+
+
+
+}
+.hero-line{
+    width: 80%;
+    height: 30px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    bottom: 40px;
+    color: black;
+  
+}
+.hero-line a{
+    text-decoration: none;
+    margin-left: 15px;
+    color: #2162a1;
+
+     
+}
+.hero-line a:hover{
+    text-decoration: underline;
+    color: rgb(65, 62, 62)
+}
+ 
+body {
+  background-color: #eaeded;  /* Amazon jaisa light grey */
+}
+
+ .body-carts{
+    display:flex;
+    justify-content: space-evenly;
+    margin-top:15px;
+    flex-wrap: wrap;
+ }
+ .box{
+    height: 450px;
+    width:270px;
+    border-radius: 2px; /* added after */
+    overflow: hidden; /* added after */
+   
+ }
+ .box-content h2{
+   color: rgb(63, 60, 60);
+ }
+ .box-image{
+    background-size: cover;
+    width: 250px;
+    height: 340px;
+    margin-top:0.4rem;
+    
+ }
+ .box-content{
+   
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: white;
+    border-radius: 2px;
+     
+      margin-top:20px;
+      padding-left: 12px;
+      margin-left: 5px;
+      
+ }
+ .box-content p{
+    margin-top:10px;
+    color:#3570a9;
+ }
+ .larg_img{
+   height: 300px;
+   width:  95%; /* it was 1215px */ 
+   max-width: 1215px; /* included after */
+   margin:17px auto 0 auto; /* it was just 17px */
+   background-color: white;
+   border-radius: 2px;
+     
+   
+ }
+ .larg_img h2{
+   color: black;
+   margin-bottom: 2px;
+   margin-top: 10px;
+   margin-left: 10px;
+ }
+ .larg_card{
+   width: 100%; /* it was 1200px */
+   height: 250px;
+   background-size: cover;
+   margin-left: 0;
+ }
+ .larg_card h2{
+   color: black;
+ }
+ .back{
+    margin-top: 20px;
+    height: 49px;
+    background-color: #37475a;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ }
+ .info{
+    height: 391px;
+    background-color: #232f3e;
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+    
+ }
+ .list_anch a{
+   color: #c6c3c3;
+ }
+ .list_p{
+   font-weight: 700;
+ }
+.list_one a{
+   display: block;
+   margin-top: 10px;
+}
+.list_one{
+   height: 10rem;
+   margin-bottom: 90px;
+   
+   
+}
+.currency{
+   height:8rem;
+   background-color: #232f3e;
+   border-top: 1px solid white;
+}
+.mini_logo{
+   width: 100px;
+   height: 60px;
+   background-image: url("amazon_logo.png");
+   background-size: cover;
+   margin-left: 130px;
+   
+}
+.language{
+   width: 131px;
+   height: 33px;
+   border:1px solid white;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   
+}
+.inr{
+   width: 150px;
+   height: 33px;
+   border:1px solid white;
+   margin-left: 10px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+.country{
+   width:130px;
+   height: 33px;
+   border:1px solid white;
+   margin-left: 10px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+.currency{
+   display: flex;
+   justify-content: space-evenly;
+   align-items: center;
+}
+.bars_group{
+   display: flex;
+   margin-right: 130px;
+   text-align: center;
+}
+.last_box{
+   height: 500px;
+   background-color: #0f1111;
+   display: flex;
+   justify-content:space-between;
+   
+   font-size: 12px;
+   font-style: sans-serif;
+   padding-left: 110px;
+   padding-right: 110px;
+   border-radius: 2px;
+}
+.last_box p{
+   font-weight: 600;
+   margin-top: 30px;
+   color: #DDDDDD;
+   
+}
+.last_box a{
+   color:#999999;
+}
+.container_size{
+   width: 80px;
+}
+.last_link{
+   height: 100px;
+   background-color: #0f1111;
+    text-align: center;
+    font-size: 14px;
+     
+}
+.last_link a{
+   margin-left: 10px;
+   color: rgb(199, 192, 192);
+}
+.last_link p{
+   margin-top: 6px;
+   color: rgb(199, 192, 192);
+}
+a{
+   text-decoration: none;
+}
+.info a:hover{
+   text-decoration: underline;
+}
+.container_size a:hover{
+   text-decoration: underline;
+}
+.last_link a:hover{
+   text-decoration: underline;
+}
+/* ============================================
+   RESPONSIVE STYLES — DAY 2: NAVBAR (UPDATED)
+   ============================================ */
+
+@media (max-width: 768px) {
+
+    /* --- Top Navbar --- */
+    .Nav-container {
+        background-color: #131921;
+        height: auto;
+        min-height: 55px;
+        flex-wrap: wrap;
+        padding: 6px 10px;
+        gap: 4px;
+        justify-content: space-between;
+    }
+
+    .nav-address {
+        display: none;
+    }
+    .nav-order {
+        display: none;
+    }
+    .nav-sign {
+        display: none;
+    }
+
+    .nav-logo {
+        order: 1;
+    }
+
+    .nav-cart {
+        order: 2;
+        font-size: 1.2rem;
+    }
+
+    .nav-search {
+        order: 3;
+        width: 100%;
+        margin-top: 4px;
+    }
+
+    input {
+        flex: 1;
+        width: 100%;
+        min-width: 0;
+    }
+
+    /* --- Secondary Navbar --- */
+    .nav-2 {
+        overflow-x: auto;
+        white-space: nowrap;
+        height: auto;
+        padding: 5px 0;
+        scrollbar-width: none;
+        -ms-overflow-style: none;
+    }
+    .nav-2::-webkit-scrollbar {
+        display: none;
+    }
+
+    .nav-2-item,
+    .nav-menu {
+        flex-shrink: 0;
+        display: inline-flex;
+    }
+
+    /* --- Hero line fix --- */
+    .hero-line {
+        height: auto;
+        min-height: 30px;
+        padding: 6px 12px;
+        width: 95%;
+        font-size: 0.75rem;
+        text-align: center;
+        flex-direction: column;
+        gap: 2px;
+    }
+}
+
+/* --- Extra small phones --- */
+@media (max-width: 480px) {
+    .Nav-container {
+        padding: 5px 8px;
+    }
+    .logo {
+        width: 80px;
+        height: 35px;
+    }
+    .hero-sec {
+        height: 280px;
+    }
+}
+/* ============================================
+   DAY 3: HERO SECTION & PRODUCT CARDS
+   ============================================ */
+
+@media (max-width: 768px) {
+
+    /* --- Hero Section --- */
+    .hero-sec {
+        height: 220px;          /* shorter on mobile */
+        background-position: center;
+    }
+
+    .hero-line {
+        height: auto;
+        min-height: 30px;
+        padding: 8px 12px;
+        width: 95%;
+        font-size: 0.72rem;
+        text-align: center;
+        flex-direction: column;
+        gap: 4px;
+        bottom: 10px;           /* less gap from bottom */
+        color: black;
+    }
+
+    .hero-line a {
+        margin-left: 0;         /* remove left margin, centered now */
+    }
+
+    /* --- Product Cards Grid --- */
+    .body-carts {
+        display: grid;
+        grid-template-columns: 1fr 1fr;   /* 2 cards per row */
+        gap: 12px;
+        padding: 12px;
+        margin-top: 10px;
+    }
+
+    .box-content {
+        width: 100%;            /* fill the grid cell */
+        margin-left: 0;
+        margin-top: 0;
+        padding-left: 8px;
+    }
+
+    .box {
+        width: 100%;            /* no more fixed 270px */
+        height: auto;           /* no more fixed 450px */
+        min-height: 250px;
+    }
+
+    .box-image {
+        width: 100%;            /* fill the card */
+        height: 160px;          /* fixed height but image fills it */
+        background-size: cover;
+        background-position: center;
+    }
+
+    /* --- Large banner card --- */
+    .larg_img {
+        width: 95%;
+        height: auto;
+        margin: 10px auto;
+    }
+    /* Inside your @media (max-width: 768px) block */
+   .larg_img {
+    grid-column: 1 / -1;    /* span full width across both columns */
+    width: 100%;
+    height: auto;
+    margin: 0;
+}
+
+    .larg_card {
+        height: 160px;
+    }
+}
+
+@media (max-width: 480px) {
+    .body-carts {
+        grid-template-columns: 1fr 1fr;   /* still 2 columns on small phones */
+        gap: 8px;
+        padding: 8px;
+    }
+
+    .box-image {
+        height: 130px;
+    }
+
+    .hero-sec {
+        height: 180px;
+    }
+}
+/* ============================================
+   DAY 4: FOOTER
+   ============================================ */
+
+@media (max-width: 768px) {
+
+    /* --- Footer info section (4 columns) --- */
+    .info {
+        flex-direction: column;   /* stack columns vertically */
+        height: auto;             /* remove fixed 391px */
+        padding: 20px 24px;
+        gap: 0;
+        align-items: flex-start;  /* align text to left */
+    }
+
+    .list_one {
+        height: auto;             /* remove fixed height */
+        margin-bottom: 24px;      /* clean spacing between sections */
+        width: 100%;
+    }
+
+    /* --- Currency bar --- */
+    .currency {
+        height: auto;
+        flex-direction: column;
+        padding: 16px;
+        gap: 12px;
+        align-items: center;
+    }
+
+    .mini_logo {
+        margin-left: 0;           /* remove hardcoded 130px */
+    }
+
+    .bars_group {
+        margin-right: 0;          /* remove hardcoded 130px */
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 8px;
+    }
+
+    /* --- Last box (7 service columns) --- */
+    .last_box {
+        height: auto;             /* remove fixed 500px */
+        display: grid;
+        grid-template-columns: 1fr 1fr;   /* 2 columns instead of 7 */
+        padding: 20px 16px;
+        gap: 8px;
+    }
+
+    .container_size {
+        width: 100%;              /* fill grid cell, not fixed 80px */
+    }
+
+    /* --- Last link row --- */
+    .last_link {
+        height: auto;
+        padding: 16px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 8px;
+    }
+
+    .last_link a {
+        margin-left: 0;
+    }
+}
+/* ============================================
+   DAY 5: FINAL POLISH
+   ============================================ */
+
+@media (max-width: 768px) {
+
+    /* Back to top — bigger tap target on mobile */
+    .back {
+        height: 60px;
+        font-size: 1rem;
+    }
+
+    /* Last odd items in the service grid — center them */
+    .last_box {
+        justify-items: start;
+    }
+
+    /* Copyright row — slightly more padding */
+    .last_link {
+        padding-bottom: 24px;
+    }
+
+    /* Tablet view — test at 768px too */
+    .nav-2-item a,
+    .nav-menu a {
+        font-size: 0.85rem;
+    }
+}
+/* Fix odd last items in service grid */
+@media (max-width: 768px) {
+    .seven_col {
+        grid-column: 1 / -1;        /* span full width */
+        display: grid;
+        grid-template-columns: 1fr 1fr;   /* 2 columns within it */
+        gap: 8px;
+    }
+}
+
