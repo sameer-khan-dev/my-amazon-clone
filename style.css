@@ -1,7 +1,7 @@
 *{
     margin: 0px;
     padding: 0px;
-     box-sizing: border-box; /* border: border-box; this was wrong*/
+     box-sizing: border-box;
     color:white;
 
 }
@@ -53,12 +53,12 @@
     height: 32px;
     width:44px;
     text-align: center;
-    color: black; /* added after */
+    color: black; 
  }
  input{
     height: 32px;
     width:300px;
-    color: black; /* added after */
+    color: black; 
  }
  .search-but{
     width: 32px;
@@ -96,7 +96,7 @@
     display: flex;
     color:#ffffff;
     align-items: center;
-    /* justify-content: space-evenly; */
+   
     
      
  }
@@ -105,43 +105,8 @@
     margin-left: 10px;
     margin-right: 10px;
     font-weight: 600;
-    
-    
  }
- /*
- .top-deal{
-  margin-left: 10px;
-    margin-right: 10px;
-     font-weight:  650;
- }
- .prime-ved{
-   margin-left: 10px;
-    margin-right: 10px;
-     font-weight:  650;
- }
-.registry{
-      margin-left: 10px;
-    margin-right: 10px;
-     font-weight:  650;
-}
-.gifts{
-       margin-left: 10px;
-    margin-right: 10px;
-     font-weight:  650;
-}
-.service{
-      margin-left: 10px;
-    margin-right: 10px;
-     font-weight:  650;
-}
-.sell{
-      margin-left: 10px;
-    margin-right: 10px;
-     font-weight:  650;
-    
-}
-*/
-.nav-2-item{               /* .top-deal to .sell */
+.nav-2-item{ 
    margin: 0 10px;
    font-weight: 600;
 }
@@ -161,9 +126,6 @@
     display: flex;
     justify-content: center ;
     align-items: flex-end;
-
-
-
 }
 .hero-line{
     width: 80%;
@@ -175,22 +137,18 @@
     position: relative;
     bottom: 40px;
     color: black;
-  
 }
 .hero-line a{
     text-decoration: none;
     margin-left: 15px;
-    color: #2162a1;
-
-     
+    color: #2162a1;    
 }
 .hero-line a:hover{
     text-decoration: underline;
     color: rgb(65, 62, 62)
 }
- 
 body {
-  background-color: #eaeded;  /* Amazon jaisa light grey */
+  background-color: #eaeded;
 }
 
  .body-carts{
@@ -202,8 +160,8 @@ body {
  .box{
     height: 450px;
     width:270px;
-    border-radius: 2px; /* added after */
-    overflow: hidden; /* added after */
+    border-radius: 2px;
+    overflow: hidden; 
    
  }
  .box-content h2{
@@ -235,9 +193,9 @@ body {
  }
  .larg_img{
    height: 300px;
-   width:  95%; /* it was 1215px */ 
-   max-width: 1215px; /* included after */
-   margin:17px auto 0 auto; /* it was just 17px */
+   width:  95%; 
+   max-width: 1215px; 
+   margin:17px auto 0 auto; 
    background-color: white;
    border-radius: 2px;
      
@@ -250,7 +208,7 @@ body {
    margin-left: 10px;
  }
  .larg_card{
-   width: 100%; /* it was 1200px */
+   width: 100%; 
    height: 250px;
    background-size: cover;
    margin-left: 0;
@@ -392,13 +350,10 @@ a{
 .last_link a:hover{
    text-decoration: underline;
 }
-/* ============================================
-   RESPONSIVE STYLES — DAY 2: NAVBAR (UPDATED)
-   ============================================ */
-
+/* Responsive navbar */
 @media (max-width: 768px) {
 
-    /* --- Top Navbar --- */
+    /* Top Navbar */
     .Nav-container {
         background-color: #131921;
         height: auto;
@@ -440,7 +395,7 @@ a{
         min-width: 0;
     }
 
-    /* --- Secondary Navbar --- */
+    /* Secondary Navbar */
     .nav-2 {
         overflow-x: auto;
         white-space: nowrap;
@@ -458,8 +413,6 @@ a{
         flex-shrink: 0;
         display: inline-flex;
     }
-
-    /* --- Hero line fix --- */
     .hero-line {
         height: auto;
         min-height: 30px;
@@ -472,7 +425,7 @@ a{
     }
 }
 
-/* --- Extra small phones --- */
+/* Extra small phones */
 @media (max-width: 480px) {
     .Nav-container {
         padding: 5px 8px;
@@ -485,15 +438,13 @@ a{
         height: 280px;
     }
 }
-/* ============================================
-   DAY 3: HERO SECTION & PRODUCT CARDS
-   ============================================ */
+/* Responsive hero section & product cards */
 
 @media (max-width: 768px) {
 
-    /* --- Hero Section --- */
+    /* Hero Section */
     .hero-sec {
-        height: 220px;          /* shorter on mobile */
+        height: 220px; 
         background-position: center;
     }
 
@@ -506,15 +457,15 @@ a{
         text-align: center;
         flex-direction: column;
         gap: 4px;
-        bottom: 10px;           /* less gap from bottom */
+        bottom: 10px;         
         color: black;
     }
 
     .hero-line a {
-        margin-left: 0;         /* remove left margin, centered now */
+        margin-left: 0;  
     }
 
-    /* --- Product Cards Grid --- */
+    /* Product Cards Grid */
     .body-carts {
         display: grid;
         grid-template-columns: 1fr 1fr;   /* 2 cards per row */
@@ -531,27 +482,27 @@ a{
     }
 
     .box {
-        width: 100%;            /* no more fixed 270px */
-        height: auto;           /* no more fixed 450px */
+        width: 100%;
+        height: auto;
         min-height: 250px;
     }
 
     .box-image {
-        width: 100%;            /* fill the card */
-        height: 160px;          /* fixed height but image fills it */
+        width: 100%;
+        height: 160px;
         background-size: cover;
         background-position: center;
     }
 
-    /* --- Large banner card --- */
+    /* Large banner card */
     .larg_img {
         width: 95%;
         height: auto;
         margin: 10px auto;
     }
-    /* Inside your @media (max-width: 768px) block */
+
    .larg_img {
-    grid-column: 1 / -1;    /* span full width across both columns */
+    grid-column: 1 / -1;
     width: 100%;
     height: auto;
     margin: 0;
@@ -577,28 +528,25 @@ a{
         height: 180px;
     }
 }
-/* ============================================
-   DAY 4: FOOTER
-   ============================================ */
+
+/* Responsive footer */
 
 @media (max-width: 768px) {
 
-    /* --- Footer info section (4 columns) --- */
     .info {
-        flex-direction: column;   /* stack columns vertically */
-        height: auto;             /* remove fixed 391px */
+        flex-direction: column; 
+        height: auto; 
         padding: 20px 24px;
         gap: 0;
-        align-items: flex-start;  /* align text to left */
+        align-items: flex-start; 
     }
 
     .list_one {
-        height: auto;             /* remove fixed height */
-        margin-bottom: 24px;      /* clean spacing between sections */
+        height: auto; 
+        margin-bottom: 24px; 
         width: 100%;
     }
 
-    /* --- Currency bar --- */
     .currency {
         height: auto;
         flex-direction: column;
@@ -608,30 +556,28 @@ a{
     }
 
     .mini_logo {
-        margin-left: 0;           /* remove hardcoded 130px */
+        margin-left: 0; 
     }
 
     .bars_group {
-        margin-right: 0;          /* remove hardcoded 130px */
+        margin-right: 0; 
         flex-wrap: wrap;
         justify-content: center;
         gap: 8px;
     }
 
-    /* --- Last box (7 service columns) --- */
     .last_box {
-        height: auto;             /* remove fixed 500px */
+        height: auto; 
         display: grid;
-        grid-template-columns: 1fr 1fr;   /* 2 columns instead of 7 */
+        grid-template-columns: 1fr 1fr; 
         padding: 20px 16px;
         gap: 8px;
     }
 
     .container_size {
-        width: 100%;              /* fill grid cell, not fixed 80px */
+        width: 100%;  
     }
 
-    /* --- Last link row --- */
     .last_link {
         height: auto;
         padding: 16px;
@@ -645,40 +591,33 @@ a{
         margin-left: 0;
     }
 }
-/* ============================================
-   DAY 5: FINAL POLISH
-   ============================================ */
+/* Final Polish */
 
 @media (max-width: 768px) {
 
-    /* Back to top — bigger tap target on mobile */
     .back {
         height: 60px;
         font-size: 1rem;
     }
 
-    /* Last odd items in the service grid — center them */
     .last_box {
         justify-items: start;
     }
 
-    /* Copyright row — slightly more padding */
     .last_link {
         padding-bottom: 24px;
     }
 
-    /* Tablet view — test at 768px too */
     .nav-2-item a,
     .nav-menu a {
         font-size: 0.85rem;
     }
 }
-/* Fix odd last items in service grid */
 @media (max-width: 768px) {
     .seven_col {
-        grid-column: 1 / -1;        /* span full width */
+        grid-column: 1 / -1;
         display: grid;
-        grid-template-columns: 1fr 1fr;   /* 2 columns within it */
+        grid-template-columns: 1fr 1fr;
         gap: 8px;
     }
 }
